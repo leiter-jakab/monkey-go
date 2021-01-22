@@ -14,7 +14,7 @@ let add = fn(a, b) {
 	a + b;
 };
 
-result = add(five, ten);
+let result = add(five, ten);
 
 !-*/5;
 5 < 10 > 5;
@@ -59,6 +59,7 @@ if (5 < 10) {
 		{token.SEMICOLON, ";"},
 		{token.RBRACE, "}"},
 		{token.SEMICOLON, ";"},
+		{token.LET, "let"},
 		{token.IDENT, "result"},
 		{token.ASSIGN, "="},
 		{token.IDENT, "add"},
